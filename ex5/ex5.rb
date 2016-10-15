@@ -1,8 +1,8 @@
 name = 'Zed A. Shaw'
-age = 35 # not a lie in 2009
-height = 74 # inches
+age = 32 # not a lie in 2009
+height = 66.5 # inches
 height_cms = (height*2.54).to_i # conversion from inches to cm's
-weight = 180 # lbs
+weight = 137 # lbs
 weight_kgs = (weight*0.45359237).to_i # conversion fro US pounds to KG's
 eyes = 'Blue'
 teeth = 'White'
