@@ -1,5 +1,13 @@
-user_name = ARGV.first #gets the first argument
-prompt = '> '
+first, second = ARGV
+
+# user_name = ARGV.first #gets the first argument
+user_name = first
+code = second.to_i
+unless (code == 1357) then
+  puts "Sorry #{user_name}, that was the incorrect passcode... goodbye"
+  exit
+end
+prompt = ':-) '
 
 puts "hi #{user_name}."
 puts "I'd like to ask you a few questions."
