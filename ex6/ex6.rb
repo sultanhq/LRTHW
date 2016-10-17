@@ -1,7 +1,11 @@
 # Variable defining types_of_people
 types_of_people = 10
 # creating a concatinated string from a string and a variable
-x = "There are #{types_of_people.class} types of people."
+x = 'There are #{types_of_people.class} types of people.'
+# the single quote marks can be used a literal string, but does
+# not allow for interpolation or escaping like the double quote allows
+
+
 # variable with string
 binary = "binary"
 # variable with string
