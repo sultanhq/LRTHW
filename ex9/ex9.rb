@@ -1,6 +1,6 @@
 # Here's some new stange stuff, remember type it exactly
 
-days = "Mon Rue Wed Thu Fri Sat Sun"
+days = "Mon Tue Wed Thu Fri Sat Sun"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 
 puts "Here are the days: #{days}"
