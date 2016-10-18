@@ -36,3 +36,9 @@ what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 # 35 + (-4,426(4,500(25))) = 4391
 
 puts "That becomes: #{what}. can you do it by hand?"
+
+puts "Now my test... height * weight / iq + age"
+
+new_what = multiply(height, divide(weight, add(iq, age)))
+
+puts "Here comes the maths...:\n#{new_what}"
