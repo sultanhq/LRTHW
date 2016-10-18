@@ -41,4 +41,4 @@ puts "Now my test... height * weight / iq + age"
 
 new_what = multiply(height, divide(weight, add(iq, age)))
 
-puts "Here comes the maths...:\n#{new_what}"
+puts "Here comes the answer...:\n#{new_what}"
