@@ -1,0 +1,43 @@
+Robs-MacBook-Pro:ex26 Rob$ CLEAR
+Robs-MacBook-Pro:ex26 Rob$ irb
+2.3.0 :001 > true && true
+ => true
+2.3.0 :002 > false && true
+ => false
+2.3.0 :003 > 1 == 1 && 2 == 1
+ => false
+2.3.0 :004 > "test" == "test"
+ => true
+2.3.0 :005 > 1 == 1 || 2 != 1
+ => true
+2.3.0 :006 > true && 0 != 1
+ => true
+2.3.0 :007 > false && 0 != 0
+ => false
+2.3.0 :008 > true || 1 == 1
+ => true
+2.3.0 :009 > "test" == "testing"
+ => false
+2.3.0 :010 > 1 != 0 && 2 == 1
+ => false
+2.3.0 :011 > "test" != "testing"
+ => true
+2.3.0 :012 > "test" == 1
+ => false
+2.3.0 :013 > !(true && false)
+ => true
+2.3.0 :014 > !(1 == 1 && 0 != 1)
+ => false
+2.3.0 :015 > !(10 == 1 && 1000 == 1000)
+ => true
+2.3.0 :016 > !(1 != 10 || 3 == 4)
+ => false
+2.3.0 :017 > !("testing" == 'testing' && "Zed" == "Cool Guy")
+ => true
+2.3.0 :018 > 1 == 1 && (!("testing" == 1 || 1 == 0))
+ => true
+2.3.0 :019 > "chunky" == "bacon" && (!(3 == 4 || 3 == 3))
+ => false
+2.3.0 :020 > 3 == 3 && (!("testing" == "testing" || "Ruby" == "Fun"))
+ => false
+2.3.0 :021 >
