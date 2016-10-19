@@ -1,6 +1,6 @@
-people = 20
-cats = 30
-dogs = 15
+people = 25
+cats = 77
+dogs = 30
 
 
 if people < cats
@@ -28,6 +28,12 @@ end
 
 if people <= dogs
   puts "People are less that or equal to dogs."
+end
+
+if (dogs + cats > people)
+  puts "The animals rule the planet! eep"
+else
+  puts "The Prople are the master race. :-)"
 end
 
 
