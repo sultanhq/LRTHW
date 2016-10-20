@@ -16,3 +16,12 @@ puts animals[4]
 puts animals[2]
 puts animals[5]
 puts animals[3]
+
+puts "\nNow the Colours!"
+colours = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+
+puts colours[1,2]
+puts colours.index('Red')
+puts colours[4,6]
+puts colours.index('Pink')
+puts colours[10]
