@@ -3,3 +3,4 @@ self
 chop
 .cycle
 $stdout.sync = true
+regexp's

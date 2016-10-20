@@ -9,7 +9,7 @@ puts "Here's you file #{filename}:"
 # ".read" prints out the contents of the file
 print txt.read
 
-#close the file once finished with
+# close the file once finished with
 txt.close()
 
 # Prints a string asking for a filename again.
@@ -23,5 +23,5 @@ txt_again = open(file_again)
 # ".read" prints out the contents of the file
 print txt_again.read
 
-#close the file once finished with
+# close the file once finished with
 txt_again.close()
