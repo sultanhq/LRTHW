@@ -1,11 +1,11 @@
 def gold_room
-  puts "This room is full of gold.  How much do you take?"
+  puts "This room is full of gold. How much do you take?"
 
   print "> "
   choice = $stdin.gets.chomp
 
-  # this line has a bug, so fix it
-  if choice.include?("0") || choice.include?("1")
+  #this line has a bug, so fix it
+  if ((/\d/ =~ choice) == 0)
     how_much = choice.to_i
   else
     dead("Man, learn to type a number.")
@@ -21,10 +21,10 @@ end
 
 
 def bear_room
-  puts "There is a bear here."
+  puts "There is a bear in here."
   puts "The bear has a bunch of honey."
   puts "The fat bear is in front of another door."
-  puts "How are you going to move the bear?"
+  puts "how are you going to move the bear?"
   bear_moved = false
 
   while true
@@ -64,6 +64,31 @@ def cthulhu_room
   end
 end
 
+def bar_room
+  puts "You have found the Bar"
+  puts "A man asks you what you would like to drink?"
+  puts "\"You can have beer, wine, gin, whiskey or water\""
+  print "> "
+
+  choice = $stdin.gets.chomp
+  if choice == "beer"
+    puts "The barman gives you a beer and you relax with a cold beverage"
+  elsif choice == "wine"
+    puts "You open a bottle of wine and watch the sun go down"
+  elsif choice == "gin"
+    puts "You drink some gin, then some more and the some more..."
+    puts "You collapse on the table drunk and wake up in a bath with you kidneys removed."
+    dead("oh dear...")
+  elsif choice == "whiskey"
+    puts "The barman joins you in having a few whiskey's."
+    puts "You convince the barman to give you a job and you enjoy a wonderfull career."
+  elsif choice == "water"
+    dead("who drinks water in a bar? the barman has poisned the water and you die!")
+  else
+    dead("You choose not to drink which insults the barman, who shoots you dead!")
+  end
+  puts "The end..."
+end
 
 def dead(why)
   puts why, "Good job!"
@@ -72,7 +97,7 @@ end
 
 def start
   puts "You are in a dark room."
-  puts "There is a door to your right and left."
+  puts "There is a door to your right and left and one in front of you"
   puts "Which one do you take?"
 
   print "> "
@@ -82,8 +107,10 @@ def start
     bear_room
   elsif choice == "right"
     cthulhu_room
+  elsif choice == "forward"
+    bar_room
   else
-    dead("You stumble around the room until you starve.")
+    dead("you stumble around the room until you starve.")
   end
 end
 
