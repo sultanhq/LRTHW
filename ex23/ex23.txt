@@ -3,4 +3,7 @@ self
 chop
 .cycle
 $stdout.sync = true
-regexp's
+regexp's how to test for only digits in an input
+map vs each - done
+Markdown language
+include? t/f
