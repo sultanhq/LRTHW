@@ -30,6 +30,6 @@ bananas.sing_me_a_song()
 lamb = ["Mary had a little lamb,",
   "his fur was white as snow,",
   "and everywhere that Mary went,",
-  "the lamb, the lamb was sure to go"]
+  "the lamb was sure to go"]
 
 puts lamb
