@@ -19,3 +19,17 @@ bulls_on_parade = Song.new(["They rally around tha family",
 happy_bday.sing_me_a_song()
 
 bulls_on_parade.sing_me_a_song()
+
+bananas = Song.new(["Bananas in pajamas are coming down the stairs,",
+  "Bananas in pajamas are coming down in pairs,",
+  "Bananas in pajamas are chasing teddy bears,",
+  "'cos on Tuesdays they all try to catch them unawares!"])
+
+bananas.sing_me_a_song()
+
+lamb = ["Mary had a little lamb,",
+  "his fur was white as snow,",
+  "and everywhere that Mary went,",
+  "the lamb, the lamb was sure to go"]
+
+puts lamb
